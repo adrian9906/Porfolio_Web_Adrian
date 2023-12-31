@@ -1,0 +1,90 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-10 text-justify">
+    
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Software Engineer"
+      subtitle="2018 to 2022 at Universidad Tecnológica de La Habana 'José Antonio Echevarría', CUJAE"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Freelance (Self employed)"
+      subtitle="From january 2023, Remote"
+    >
+      <div class="my-2 text-justify">
+        <p>
+          <li>Developed a feature selection algorithm using the semantics of the features with WordNet for the classification of non-stationary text flows in Java.</li>
+          <li>Developed a topic extraction algorithm in Python that uses topic modeling like LDA and also detects terms related to different acronyms.</li>
+          <li>Created responsive, user-friendly web pages with NextJS, boosting client satisfaction and engagement.</li>
+        </p>
+
+      </div>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Developer (Intern)"
+      subtitle="From july 2019 to september 2022 at Universidad Tecnológica de La Habana 'José Antonio Echevarría', CUJAE, Habana, Cuba"
+    >
+    <div class="my-2 text-justify">
+      <p>
+        <li>I developed a system capable of detecting custom named entities that assist in information extraction from a press site.</li>
+        <li>I developed a web scraper to collect relevant information from all national and international press sites. Additionally, a statistics system was created to visualize relevant information extracted, such as the topics that appear most frequently in the articles, and to display a word cloud showing the most frequently used keywords in the articles.</li>
+        <li>I created and implemented a BigData architecture for the analysis of text streams using open-source technologies such as Apache Kafka, Apache Solr, Apache Spark, MongoDB. Within the analysis task, text classification, named entity recognition, keyword extraction, and sentiment analysis are found. This allows for facilitating the decision-making of data analysts.</li>
+      </p>
+    </div>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.efset.org/cert/8Cor5r" target="_blank"> EFSET English Certificate 61/100 (C1 Advanced)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Python</li>
+    <li>Java</li>
+    <li>Scala</li>
+    <li>Machine Learning</li>
+    <li>Django</li>
+    <li>MySQL</li>
+    <li>MongoDB</li>
+    <li>ElasticSearch</li>
+    <li>Apache Solr</li>
+    <li>Apache Kafka</li>
+    <li>Postgresql</li>
+    <li>flask</li>
+    <li>FastApi</li>
+    <li>NextJS</li>
+    <li>Git</li>
+    <li>Github</li>
+    <li>NLP task</li>
+  </ul>
+</BaseLayout>

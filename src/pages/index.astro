@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Adrian Fernández</div>
+    <div class="text-3xl py-3 font-bold">Software Engineer</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am a Software Engineer with a solid training in Python, Scala, and Java, and I have a solid knowledge in the field of machine learning. My experience has allowed me to develop a wide range of technical and practical skills in the field of computing.
+        I have worked on several projects involving the use of programming languages such as Python, Scala, and Java. These languages have allowed me to develop efficient and scalable applications, and also allowed me to work on projects that require a high level of logic and problem-solving.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a href="mailto:contact.adriandfl99@gmail.com" target="_blank" class="btn btn-outline ml-5"> Let's connect!</a>
+      <a href="https://drive.google.com/file/d/17PJf9OnezBO-uhMcZhbUMw2pAbUFVThe/view?usp=drive_link" target="_blank" class="btn btn-primary ml-5">
+        Get Resume
+      </a>
+    </div>
+  </div>
+
+</BaseLayout>
