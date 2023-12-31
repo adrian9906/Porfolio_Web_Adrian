@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">WebSites</div>
+  </div>
+
+  <HorizontalCard
+    title="List of pokemons cards"
+    img="/listadoPokemon.png"
+    desc="This project is a Pokedex application built using NextJS, a popular React framework. The application displays a list of Pokemon, fetched from the Pokemon API, and allows users to select their favorite Pokemon from the list."
+    url="https://pokemon-list-app-eta.vercel.app/"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Python Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="DataLen"
+    desc="DataLen is a text analysis system developed in Python that performs tasks such as keyword extraction, named entity recognition, and topic detection in both Spanish and English texts. This system uses the natural language processing (NLP) library spaCy to carry out these tasks.In addition, DataLen provides a section for data visualization. This allows users to view the results of text analysis in a more intuitive and easy-to-understand manner."
+    url="https://github.com/adrian9906/DataLen.git"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="TextStreamProcessing"
+    desc="The TextStreamProcessing project is a comprehensive solution for processing text streams. This application implements a variety of natural language processing tasks, including text classification, clustering, zero-shot classification, and sentiment analysis."
+    url="https://github.com/adrian9906/TextStreamProcessing.git"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SentimentAnalysisDetection"
+    desc="The SentimentAnalysisDetection project is a comprehensive sentiment analysis solution that leverages the power of Python's TextBlob and NLTK libraries. It is designed to analyze text data, determine the sentiment (positive, negative, or neutral), and represent the sentiment with an appropriate emoji. For instance, a positive sentiment is represented by a happy face emoji."
+    url="https://github.com/adrian9906/SntimentAnalysisDetection"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="VoiceAssistant"
+    desc="VoiceAssistant is a voice-powered assistant developed in Python. It can search for information on Google, open YouTube, open a web browser, tell jokes, and play content on YouTube."
+    url="https://github.com/adrian9906/VoiceAssistant"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="SpaceShipPyGame"
+    desc="The SpaceShipPyGame project is a space shooter game developed using the Pygame library in Python. In this game, the player controls a spaceship that aims to shoot and destroy the extraterrestrials or 'aliens' that are trying to invade our planet."
+    url="https://github.com/adrian9906/SpaceShipPyGame"
+  />
+</BaseLayout>
